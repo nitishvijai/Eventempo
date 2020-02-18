@@ -14,4 +14,4 @@ Some features include:
 
 This is my first app and I'm learning more UWP dev. concepts as I code, so if you have ideas/suggestions as to how I can improve this app, please let me know at nitishv.apps@outlook.com or feel free to open an issue here. All comments are much appreciated!
 
-<a href='//www.microsoft.com/store/apps/9PCFMSX2G386?cid=storebadge&ocid=badge'><img src='images/English_get_L.png' alt='English badge' style='width: 127px; height: 52px;'/></a>
+<a href='//www.microsoft.com/store/apps/9PCFMSX2G386?cid=storebadge&ocid=badge'><img src='images/English_get-it-from-MS.png' alt='English badge' style='width: 284px; height: 104px;'/></a>

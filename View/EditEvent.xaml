@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="Eventempo.View.EditEvent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Eventempo.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Custom="using:Coding4Fun.Toolkit.Controls"
+    xmlns:Windows10FallCreatorsUpdate="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:Windows10FallCreatorsUpdate1="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 5)"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock Margin="36,35,0,0" Text="Edit an event" TextWrapping="Wrap" FontSize="36" HorizontalAlignment="Left" Width="382" Height="48" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,100,0,0" Text="Type in the information into the fields below and click on &quot;OK&quot; once you're finished, or click &quot;Cancel&quot; to return to the home screen." TextWrapping="Wrap" FontSize="16" Height="52" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,196,0,0" Text="Event name" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="EventNameBox" HorizontalAlignment="Left" Margin="135,189,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontSize="16" TextChanged="EventNameBox_TextChanged"/>
+        <CalendarDatePicker x:Name="EventDatePicker" Margin="36,290,0,0" VerticalAlignment="Top" DateChanged="EventDatePicker_DateChanged" AutomationProperties.Name="Pick a date here"/>
+        <TimePicker x:Name="EventTimePicker" Margin="35,338,0,0" VerticalAlignment="Top" FontSize="16" TimeChanged="EventTimePicker_TimeChanged" AutomationProperties.Name="Pick a time here" />
+        <TextBox x:Name="EventDescBox" HorizontalAlignment="Left" Margin="183,398,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="16" AcceptsReturn="True" Height="120" TextChanged="EventDescBox_TextChanged" />
+        <Custom:ColorHexagonPicker x:Name="NEventColorPicker" Margin="772,232,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" ColorChanged="ColorHexagonPicker_ColorChanged" AutomationProperties.Name="Pick a color here" />
+        <Button x:Name="CancelButton" Content="Cancel" Margin="0,0,150,102" VerticalAlignment="Bottom" FontSize="16" HorizontalAlignment="Right" Height="35" Width="67" Click="Button_Click" Windows10FallCreatorsUpdate:ToolTipService.ToolTip="Cancel (Escape)">
+            <Windows10FallCreatorsUpdate1:Button.KeyboardAccelerators>
+                <Windows10FallCreatorsUpdate:KeyboardAccelerator
+                    Modifiers="None"
+                    Key="Escape" />
+            </Windows10FallCreatorsUpdate1:Button.KeyboardAccelerators>
+        </Button>
+        <Button x:Name="OKButton" Content="OK" Margin="0,0,102,102" VerticalAlignment="Bottom" FontSize="16" HorizontalAlignment="Right" Height="35" Width="42" IsEnabled="False" Click="OKButton_Click" Windows10FallCreatorsUpdate:ToolTipService.ToolTip="OK (Enter)">
+            <Windows10FallCreatorsUpdate1:Button.KeyboardAccelerators>
+                <Windows10FallCreatorsUpdate:KeyboardAccelerator
+                    Modifiers="None"
+                    Key="Enter" />
+            </Windows10FallCreatorsUpdate1:Button.KeyboardAccelerators>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="36,251,0,0" Text="Event time:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,405,0,0" Text="Event description (Optional):" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Width="141"/>
+        <TextBlock x:Name="ColorLabel" HorizontalAlignment="Left" Margin="772,196,0,0" Text="Event color:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="NameWarning" HorizontalAlignment="Right" Margin="0,790,102,188" Text="Event name cannot be empty" TextWrapping="Wrap" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock x:Name="DateWarning" HorizontalAlignment="Right" Margin="0,811,102,167" Text="Event date needs to be set" TextWrapping="Wrap" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock x:Name="TimeWarning" HorizontalAlignment="Right" Margin="0,832,102,146" Text="Event time needs to be set" TextWrapping="Wrap" FontSize="16" Visibility="Collapsed"/>
+        <ContentDialog x:Name="ConfirmCancel" PrimaryButtonText="Yes" CloseButtonText="Cancel" DefaultButton="Close">
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <TextBlock Text="Are you sure you want to discard your changes?" TextWrapping="Wrap" Height="83" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+            </StackPanel>
+        </ContentDialog>
+    </Grid>
+</Page>

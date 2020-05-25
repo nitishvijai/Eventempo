@@ -1,4 +1,7 @@
-# Eventempo
+# Eventempo (Version 1.4 - Final Release)
+
+## UPDATE: This app is no longer actively being developed. However, it will still be available on the Microsoft Store for download.
+
 Short answer: Multiple event countdown timer written in C# (UWP)
 
 Long answer: Eventempo is an UWP countdown timer app for Windows 10 devices. Simply enter in a new event and the app will show you how many years, months, days, hours, minutes, and seconds are left until the event.
@@ -12,6 +15,6 @@ Some features include:
 * colorful event customization
 * notification alerts at 5 minutes remaining and at time
 
-This is my first app and I'm learning more UWP dev. concepts as I code, so if you have ideas/suggestions as to how I can improve this app, please let me know at nitishv.apps@outlook.com or feel free to open an issue here. All comments are much appreciated!
+This is my first app, and I've learned a lot from this project and about app development. 
 
-<a href='//www.microsoft.com/store/apps/9PCFMSX2G386?cid=storebadge&ocid=badge'><img src='https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png' alt='English badge' style='width: 284px; height: 104px;'/></a>
+<a href='//www.microsoft.com/store/apps/9PCFMSX2G386?cid=storebadge&ocid=badge'><img src='https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png' alt='English badge' style='width: 142px; height: 52px;'/></a>

@@ -18,3 +18,7 @@ Some features include:
 This is my first app, and I've learned a lot from this project and about app development. 
 
 <a href='//www.microsoft.com/store/apps/9PCFMSX2G386?cid=storebadge&ocid=badge'><img src='https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png' alt='English badge' style='width: 142px; height: 52px;'/></a>
+
+## Acknowledgements
+
+- Kirk Woll and DateTimeSpan CompareDates method [here](https://stackoverflow.com/a/9216404)
